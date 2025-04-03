@@ -6,11 +6,11 @@ console.log("------------Exemplo com WHILE------------")
 var numero;
 numero = prompt("Adivinhe o número entre 1 e 5:");
 
-while (numero != 5) {
-    numero = prompt("Errou! Adivinhe o número entre 1 e 5:");
-}
+while (numero !== 5) { // enquanto for diferente de 5 -> False; Continua repetindo
+    console.log(numero);
+    numero = prompt("Adivinhe o número entre 1 a 10:");
+};
 console.log("Acertou!");
-
 
 var nome;
 nome = prompt("Escreva seu nome:");
@@ -24,15 +24,11 @@ console.log(`Bom dia ${nome}`);
 // Exemplo de Do While
 console.log("------------Exemplo com DO WHILE------------")
 
-do {
+do { // o DO WHILE roda pelo menos 1 vez
     console.log(numero);
     var promptedValue = prompt("Adivinhe o número (com do while) entre 1 a 10:");
     numero = parseInt(promptedValue);
-} while (numero !== 5) { // enquanto for diferente de 5 -> False; Continua repetindo
-    console.log(numero);
-    numero = prompt("Adivinhe o número entre 1 a 10:");
-}; // Esse ta dando certo!
-
+} while (numero !== 5)// enquanto for diferente de 5 -> False; Continua repetindo
 console.log("Você ganhou!");
 
 // Exemplo de For Loop 
@@ -64,6 +60,18 @@ for (i = 0; i < numeroTotalDeNomes; i++) {
     novosNomes.push(novoNome); 
 }
 console.log(novosNomes);
+
+// Exemplo usando i-- em contextos
+
+for(i = 60; i >= 0; i--){ // Um cronômetro de 60 segundo decrescente
+    console.log(i);       // Assim é uma contagem regressiva  
+}
+
+var totalMinutos = 60;
+for(i = 0; i < 60; i++){ // Também um cronômetro de 60 segundo decrescente
+    console.log(totalMinutos);  // Mas dessa vez é necessário mostrar e alterar a variável totalMinutos
+    totalMinutos--;
+}
 
 // EXTRA - Exemplo de um condicional IF
 console.log("------------Exemplo com IF------------")
