@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página interativa de Boas-Vindas</title>
+
+    <style>
+        .delete {
+            margin-left: 6px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="taskForm">
+        <input 
+         type="text"
+         maxlength="50"
+         name="task" 
+         minlength="4"
+        />
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul id="taskList">
+    </ul>
+    
+    <!-- <button type="submit">Adicionar</button> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
